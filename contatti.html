@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShortMi/Contatti</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="headerone">
+      <div class="logo">Short<span class="red">Mi</span></div>
+      <span class="down">--Milano--</span>
+      <nav>
+        <ul class="navlist">
+          <li class="items"><a href="index.html">Home</a></li>
+          <li class="items"><a href="index.html">Servizi</a></li>
+          <li class="items"><a href="chisiamo.html">Chi siamo</a></li>
+          <li class="items"><a href="#contact">Contatti</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- contact section design -->
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Inviaci la tua richiesta</h2>
+
+      <form
+        action="mailto:frank.xdddf@gmail.com"
+        method="POST"
+        enctype="text/plain"
+      >
+        <div class="input-box">
+          <input type="text" placeholder="Nome" />
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Telefono" />
+          <input type="text" placeholder="Email oggetto" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="il tuo messaggio"
+        ></textarea>
+        <input type="submit" value="INVIA" class="btn" />
+      </form>
+    </section>
+  </body>
+</html>
