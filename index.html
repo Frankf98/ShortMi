@@ -14,12 +14,54 @@
   </head>
   <body>
     <!--navbar-->
-
     <header class="headerone" id="navbar">
-      <div class="logo">Short<span class="red">Mi</span></div>
-      <span class="down">--Milano--</span>
-      <nav>
-        <ul class="navlist">
+      <div class="logo">
+        Short<span class="red">Mi</span> <span class="down">--Milano--</span>
+      </div>
+
+      <ul class="navlist">
+        <li class="items"><a href="#home">Home</a></li>
+        <li class="items"><a href="#service">Servizi</a></li>
+        <li class="items">
+          <a href="chisiamo.html">Chi siamo</a>
+        </li>
+        <li class="items"><a href="contatti.html">Contatti</a></li>
+      </ul>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <div class="linee"></div>
+    </header>
+
+    <!--Section-Home-->
+    <section class="sechome" id="home">
+      <div class="corniv">
+        <div class="cornice">
+          <h1 class="titolo">Affitto Garantito !</h1>
+          <p class="sottotitolo">
+            Short<span class="red">Mi </span> è il tuo Miglior inquilino <br />
+            di sempre !
+          </p>
+
+          <div class="loghi">
+            <a href=""><i class="bx bxl-whatsapp"></i></a>
+            <a href=""><i class="bx bx-phone"></i></a>
+            <a href=""><i class="bx bx-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="contim">
+        <img
+          src="ffot.webp"
+          alt="immagine di un appartamento in stile moderno"
+        />
+      </div>
+    </section>
+
+    <!--Section-sidebar-->
+
+    <section class="box-side">
+      <div class="sidbarcell">
+        <ul>
           <li class="items"><a href="#home">Home</a></li>
           <li class="items"><a href="#service">Servizi</a></li>
           <li class="items">
@@ -27,36 +69,11 @@
           </li>
           <li class="items"><a href="contatti.html">Contatti</a></li>
         </ul>
-      </nav>
-    </header>
-    <div class="linee"></div>
-    <!--Section-Home-->
-    <section class="sechome" id="home">
-      <div class="cornice"></div>
-      <h1 class="titolo">Affitto Garantito!</h1>
-      <h2 class="sottotitolo">
-        Short<span class="red">Mi</span> è il tuo Miglior inquilino di sempre
-      </h2>
-
-      <div class="contim">
-        <img
-          src="ffot.webp"
-          alt="immagine di un appartamento in stile moderno"
-        />
-      </div>
-      <div class="posit">
-        <div class="loghi">
-          <a href=""><i class="bx bxl-whatsapp"></i></a>
-          <a href=""><i class="bx bx-phone"></i></a>
-          <a href=""><i class="bx bx-envelope"></i></a>
-        </div>
       </div>
     </section>
 
     <!--Section-container-->
     <section class="container" id="service">
-      <h2>Servizi</h2>
-
       <div class="services-container">
         <div class="services-box">
           <div class="cornices">
@@ -119,9 +136,7 @@
             <ul id="points">
               <li class="items2">Protezione per responsabilità civile</li>
               <li class="items2">Protezione per danni all’immobile</li>
-              <li class="items2">
-                Protezione per furti del contenuto dell’immobile
-              </li>
+              <li class="items2">Protezione per furto dei contenuti</li>
             </ul>
             <p>
               <span class="bold-text">
@@ -133,7 +148,7 @@
         </div>
       </div>
     </section>
-
+    <div class="box-side"></div>
     <!-- footer  -->
 
     <footer class="footer">
@@ -163,6 +178,9 @@
         ></a>
       </div>
     </footer>
+
+    <!-- file javascript-->
+
     <script src="script.js"></script>
   </body>
 </html>
