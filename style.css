@@ -301,7 +301,7 @@ img {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0;
+  padding: 55px 0 0 0;
   margin: 0 20px;
   gap: 3rem;
 }
@@ -473,96 +473,95 @@ a {
 /*------------section chi siamo-------------*/
 
 #about-section {
-  padding: 70px 0;
-}
-
-.tegniututtidue {
   display: flex;
-  padding: 50px 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: "Dosis", sans-serif;
+  gap: 150px;
 }
 
-.fotografia {
-  display: flex;
-  padding: 1px 20px;
-  margin: 1px 50px 20px 10px;
+.art1 {
+  margin-top: 100px;
+  width: 100%;
+  padding: 15px;
 }
 
-.fotografia img {
-  background-repeat: no-repeat;
-  width: clamp(320px, 100%, 1336px);
-  height: clamp(213.33px, 100%, 891px);
+.astr2 {
+  margin-top: 100px;
+  width: 100%;
+  padding: 30px;
+}
+
+.bx1 {
+  width: 50%;
+  float: right;
   box-shadow: 10px 8px 4px rgba(0, 0, 0, 0.2);
-}
-
-.scritti p {
-  font-size: 2.3rem;
-  font-family: "Dosis", sans-serif;
-  width: 500px;
-  bottom: 10px;
-  padding: 30px 60px;
-  margin: 20px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-#postur {
   position: relative;
-  top: 30px;
+}
+
+.contlogo {
   display: flex;
-  justify-content: start;
-  padding: 10px 10px 0 0;
-  margin: 90px 0;
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-#psinix {
-  font-size: 2.3rem;
-  font-family: "Dosis", sans-serif;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  width: clamp(750px, 100%, 780px);
-  height: clamp(230px, 100%, 300px);
-  position: relative;
-  top: 30px;
-  padding: 50px 50px 30px 70px;
-  margin: 20px 50px 0 40px;
-}
-
-.logbaia img {
-  width: 150px;
-  height: 120px;
+.logobaia {
   position: absolute;
-  top: 140px;
-  left: 17px;
-  background-color: var(--main-color);
-  border-radius: 0 4% 4% 0;
-  border: 3px solid var(--text-color);
-  padding: 0;
-  margin: 0;
-
-  flex-shrink: 0.5;
-  box-shadow: 10px 8px 4px rgba(0, 0, 0, 0.2);
+  top: 15%;
+  left: 33%;
+  transform: translate(-50%, -50%);
 }
 
-.logbaia img:hover {
+.logobaia img:hover {
   box-shadow: none;
-  transform: translateX(5px);
+  transform: translateX(3px);
 }
 
-.logmediami {
-  width: clamp(220px, 320px, 320px);
-  top: 30px;
+.logobaias {
+  max-width: 30%;
+  box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.419);
+  border-radius: 0 5% 5% 0;
+}
+
+.bx2 {
+  width: 40%;
+  font-size: 2.3rem;
+  padding: 40px 65px;
+  margin: 10px 5px 0 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bx3 {
+  width: 40%;
+  float: right;
+  font-size: 2.3rem;
+  padding: 40px 90px;
+  margin: 10px 50px 0 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bx4 {
+  width: 50%;
+  position: relative;
+  display: inline-block;
+  box-shadow: 10px 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logomediami {
   position: absolute;
-  padding: 0;
-  margin: 0;
-  border-radius: 0 3% 3% 0;
+  top: 20px; /* Regola la posizione verticale del logo */
+  left: 8px; /* Regola la posizione orizzontale del logo */
+  max-width: 25%;
 }
 
-.logmediami a {
-  transition: transform 0.4s ease;
-  opacity: 0.7;
+.logoclick {
+  opacity: 0.6; /* Opacità iniziale */
+  transition: opacity 0.3s ease;
 }
 
-.logmediami a:hover {
-  transform: translateX(-10px);
+.logoclick:hover {
   opacity: 1;
 }
 
@@ -754,6 +753,40 @@ a {
     font-size: 80%;
     margin: 0;
   }
+
+  .art1 {
+    flex-direction: column;
+    display: flex;
+    padding-top: 0;
+    top: 0;
+  }
+
+  .bx1 {
+    width: 80%;
+    margin: 0 0 0 75px;
+  }
+
+  .bx2 {
+    width: 80%;
+    margin-left: 75px;
+  }
+
+  .astr2 {
+    flex-direction: column;
+    display: flex;
+    padding-top: 0;
+    top: 0;
+  }
+
+  .bx3 {
+    width: 80%;
+    margin: 0 0 0 75px;
+  }
+
+  .bx4 {
+    width: 80%;
+    margin-left: 75px;
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -806,6 +839,17 @@ a {
   .loghi {
     font-size: 1rem;
     left: 10%;
+  }
+
+  #about-section {
+    display: flex;
+    flex-direction: row;
+    padding: auto;
+    flex-flow: row wrap;
+  }
+
+  .bx3 {
+    order: 1;
   }
 }
 
@@ -1052,6 +1096,42 @@ a {
     left: 10px;
   }
 
+  .art1 {
+    flex-direction: column;
+    display: flex;
+    padding: 0 30px 0 0;
+    top: 0;
+  }
+
+  .bx1 {
+    width: 95%;
+    margin: 30px;
+  }
+
+  .bx2 {
+    width: 95%;
+    margin: 30px;
+    padding: 28px;
+  }
+
+  .astr2 {
+    flex-direction: column;
+    display: flex;
+    padding: 0 30px 0 0;
+    top: 0;
+  }
+
+  .bx3 {
+    width: 95%;
+    margin: 20px;
+    padding: 30px;
+  }
+
+  .bx4 {
+    width: 95%;
+    margin: 30px;
+  }
+
   .services-box {
     width: 100%;
   }
@@ -1248,6 +1328,43 @@ a {
   .miofirm2 p {
     display: none;
   }
+
+  .art1 {
+    flex-direction: column;
+    display: flex;
+    padding-top: 0;
+    top: 0;
+  }
+
+  .bx1 {
+    width: 95%;
+    margin: 30px;
+  }
+
+  .bx2 {
+    width: 95%;
+    margin: 20px 25px;
+    padding: 28px;
+  }
+
+  .astr2 {
+    flex-direction: column;
+    display: flex;
+    padding-top: 0;
+    margin: 20px 15px 0 15px;
+    top: 0;
+  }
+
+  .bx3 {
+    width: 95%;
+    margin: 30px;
+    padding: 28px;
+  }
+
+  .bx4 {
+    width: 95%;
+    margin: 30px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -1385,5 +1502,44 @@ a {
 
   .logmediami a {
     font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 408px) {
+  .art1 {
+    flex-direction: column;
+    display: flex;
+    padding-top: 0;
+    top: 0;
+  }
+
+  .bx1 {
+    width: 95%;
+    margin: 30px;
+  }
+
+  .bx2 {
+    width: 95%;
+    margin: 20px 20px;
+    padding: 28px;
+  }
+
+  .astr2 {
+    flex-direction: column;
+    display: flex;
+    padding-top: 0;
+    margin-top: 20px;
+    top: 0;
+  }
+
+  .bx3 {
+    width: 95%;
+    margin: 30px;
+    padding: 28px;
+  }
+
+  .bx4 {
+    width: 95%;
+    margin: 0 18px;
   }
 }
