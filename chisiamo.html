@@ -5,34 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ShortMi/ChiSiamo</title>
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="headerone" id="navbar" id="start">
-      <div class="logo">Short<span class="red">Mi</span></div>
-      <span class="down">--Milano--</span>
-      <nav>
-        <ul class="navlist">
-          <li class="items"><a href="index.html">Home</a></li>
-          <li class="items"><a href="index.html#service">Servizi</a></li>
-          <li class="items"><a href="#about">Chi siamo</a></li>
-          <li class="items"><a href="contatti.html">Contatti</a></li>
-        </ul>
-      </nav>
+    <!--navbar-->
+    <header class="headerone" id="navbar">
+      <div class="logo">
+        Short<span class="red">Mi</span> <span class="down">--Milano--</span>
+      </div>
+
+      <ul class="navlist">
+        <li class="items" class="active"><a href="index.html">Home</a></li>
+        <li class="items"><a href="index.html#service">Servizi</a></li>
+        <li class="items">
+          <a href="#about-section">Chi siamo</a>
+        </li>
+        <li class="items"><a href="contatti.html">Contatti</a></li>
+        <div class="norap">
+          <li>
+            <p>Note Legali:</p>
+            <a href="privacy.html"><p id="undr">&copy;Privacy Policy</p></a>
+          </li>
+
+          <li>
+            <p>Realizzato da:</p>
+            <a href=""><p id="undr">&copy; FS | ScerboCode.com</p></a>
+          </li>
+        </div>
+      </ul>
+
       <div class="linee"></div>
+      <div class="trelines"><i class="bx bx-menu" id="menu-icon"></i></div>
     </header>
     <section class="ho-about" id="about-section" id="service">
-      <div class="logbaia">
-        <a href="https://www.facebook.com/baiadeigigli" target="_blank"
-          ><img src="logbaia2.webp" alt="logo del villaggio"
-        /></a>
-      </div>
       <div class="tegniututtidue">
         <div class="fotografia">
+          <div class="logbaia">
+            <a href="https://www.facebook.com/baiadeigigli" target="_blank"
+              ><img src="logbaia2.webp" alt="logo del villaggio"
+            /></a>
+          </div>
           <img
             src="villag.webp"
             alt="foto panoramica che mostra il villaggio di famiglia"
@@ -57,33 +73,28 @@
       </div>
       <div id="convert">
         <div class="tegniututtidue">
-          <div class="scritti">
-            <p id="psinix">
-              ShortMi S.R.L. è una società che opera nell'ambito del Turismo
-              delle città d'arte, fulcro dell'attività è il Rent to Rent, nello
-              slang anglosassone indica la possibilità di gestire una unità
-              immobiliare presa in locazione per poi destinarla alle locazioni
-              turistiche. Siamo specializzati nel mercato del centro storico di
-              Milano, i nostri clienti sono famiglie internazionali alla ricerca
-              di un alloggio ampio e di gran comfort sia per posizione che per
-              qualità dell'immobile, dove rilassarsi anche solo per pochi
-              giorni. ShortMi è una realtà giovane che nasce però da un team di
-              figure imprenditoriali operanti nel settore del Turismo da
-              generazioni, qui di seguito i link ad alcune strutture storiche
-              operanti nel turismo sia a livello locale che nazionale.
-            </p>
-          </div>
+          <p id="psinix">
+            Mediami è una rinomata compagnia immobiliare con sede a Milano,
+            attiva nel settore immobiliare da molti anni. Mediami si è
+            guadagnata una solida reputazione grazie alla sua competenza e alla
+            sua vasta esperienza nel mercato immobiliare Milanese. Riconoscendo
+            l'opportunità nel settore della sublocazione a scopo turistico, i
+            fondatori di Mediami hanno deciso di espandere le proprie attività
+            fondando una nuova società. Questa nuova realtà, denominata Shortmi,
+            si specializza nella gestione delle sublocazioni turistiche
+            all'interno della vivace città di Milano.
+          </p>
+
           <div class="fotografia" id="postur">
             <img
               src="mediami.webp"
               alt="foto panoramica che mostra il villaggio di famiglia"
             />
-          </div>
-
-          <div class="logmediami">
-            <a href="https://mediami.it/" target="_blank"
-              ><img src="logmedia.webp" alt="logo del villaggio"
-            /></a>
+            <div class="logmediami">
+              <a href="https://mediami.it/" target="_blank"
+                ><img src="logmedia.webp" alt="logo del villaggio"
+              /></a>
+            </div>
           </div>
         </div>
       </div>
