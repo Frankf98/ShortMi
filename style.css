@@ -177,8 +177,10 @@ li {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 30.5%;
-  left: 10.5%;
+  top: 30%;
+  left: 11.5%;
+  width: clamp(31%, 33%, 33%);
+  height: clamp(16%, 19%, 19%);
 }
 
 .titolo {
@@ -188,7 +190,7 @@ li {
   font-family: "Orbitron", sans-serif;
   font-weight: 100;
   white-space: nowrap;
-  padding-bottom: 10px;
+  padding-bottom: 3.5%;
 }
 
 .sottotitolo {
@@ -196,8 +198,6 @@ li {
   font-size: 3.7em;
   padding: 0;
   margin: 10px;
-
-  white-space: nowrap;
 
   font-family: "Dosis", sans-serif;
   font-weight: 500;
@@ -234,17 +234,16 @@ img {
   border: 2px solid var(--text-color);
   background-color: var(--main-color);
   border-radius: 11px;
-  right: 59.5%;
-  bottom: 49%;
-  width: clamp(31%, 31%, 31%);
-  height: clamp(16%, 16%, 16%);
+  right: 56.7%;
+  bottom: 46.5%;
+  width: clamp(31%, 33%, 33%);
+  height: clamp(16%, 19%, 19%);
   opacity: 0.8;
 }
 
 .loghi {
   display: inline-flex;
-  width: clamp(70%, 70%, 70%);
-  height: clamp(25%, 25%, 25%);
+  top: 3.5%;
 }
 
 .loghi a {
@@ -682,10 +681,6 @@ a {
     font-size: 3rem;
   }
 
-  .corniv {
-    bottom: 48%;
-  }
-
   .loghi {
     left: 38%;
   }
@@ -702,10 +697,6 @@ a {
 @media screen and (max-width: 1215px) {
   .sottotitolo {
     font-size: 2.7rem;
-  }
-
-  .corniv {
-    bottom: 47.5%;
   }
 
   .loghi {
@@ -809,10 +800,6 @@ a {
     font-size: 2.2rem;
   }
 
-  .corniv {
-    bottom: 48%;
-  }
-
   .titolo {
     font-size: 2.7rem;
   }
@@ -855,10 +842,6 @@ a {
     width: 50%;
   }
 
-  .corniv {
-    bottom: 47.5%;
-  }
-
   .loghi {
     font-size: 1rem;
     left: 10%;
@@ -879,10 +862,6 @@ a {
 @media screen and (max-width: 955px) {
   .sottotitolo {
     font-size: 1.8rem;
-  }
-
-  .corniv {
-    bottom: 47.5%;
   }
 
   .cornice {
@@ -950,14 +929,11 @@ a {
   .cornice {
     padding: 0;
     margin: 0;
+    top: 28%;
   }
 
   .loghi {
     border: 0;
-  }
-
-  .corniv {
-    bottom: 46%;
   }
 
   .dropdown {
