@@ -83,3 +83,10 @@ window.onscroll = () => {
   menuIcon.classList.remove("bx-x");
   navbar.classList.remove("active");
 };
+
+/*====================== rtogle icons a ====================*/
+function toggleDropdown() {
+  var dropdownMenu = document.querySelector(".dropdown-menu");
+  dropdownMenu.style.display =
+    dropdownMenu.style.display === "block" ? "none" : "block";
+}
