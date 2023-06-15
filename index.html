@@ -3,10 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="index,follow" />
+    <meta name="generator" content="vs-code" />
+    <meta
+      name="description"
+      content="Società di sublocazione a Milano nel campo immobiliare e turistico. Offriamo servizi di sublocazione di immobili residenziali e turistici a Milano. Siamo leader nel settore con esperienza pluriennale nell'intermediazione e gestione delle proprietà immobiliari. Contattaci per scoprire le nostre soluzioni di sublocazione a Milano."
+    />
+    <meta
+      name="keywords"
+      content="sublocazione Milano, società di sublocazione, campo immobiliare, campo turistico, sublocazione immobili residenziali, sublocazione immobili turistici, intermediazione immobiliare, gestione immobiliare, servizi di sublocazione Milano"
+    />
+    <meta name="FrancescoScerbo" content=" la ScerboCode creata dall'autore" />
+    <meta name="date" content="2023-06-15" />
+    <meta name="copyright" content="Copyright" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ShortMi</title>
-    <link rel="stylesheet" href="style.css" />
-
+    <link rel="stylesheet" href="style.css" media="all" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
@@ -34,7 +46,9 @@
 
           <li>
             <p>Realizzato da:</p>
-            <a href=""><p id="undr">&copy; FS | ScerboCode.com</p></a>
+            <a href="https://www.scerbocode.com/" target="_blank"
+              ><p id="undr">&copy; FS | ScerboCode.com</p></a
+            >
           </li>
         </div>
       </ul>
@@ -179,16 +193,27 @@
 
       <div class="miofirm2">
         <p>Realizzato da:</p>
-        <a href=""><p id="undr">&copy; FS | Francesco Scerbo</p></a>
+        <a href="https://www.scerbocode.com/" target="_blank"
+          ><p id="undr">&copy; FS | Francesco Scerbo</p></a
+        >
       </div>
 
       <div class="footericon">
-        <a id="iconad" class="icona" href="#home"
+        <a
+          href="#home"
+          id="iconad"
+          class="icona"
+          aria-label="pulsante che ti porta in alto alla prima pagina"
           ><i class="bx bx-chevrons-up"></i
         ></a>
       </div>
       <div class="dropdown">
-        <button class="bton" onclick="toggleDropdown()">
+        <button
+          aria-label="pulsante-contattaci"
+          name="pulsante-contattaci"
+          class="bton"
+          onclick="toggleDropdown()"
+        >
           <i class="bx bx-mail-send"></i>
         </button>
         <ul class="dropdown-menu">
