@@ -399,7 +399,7 @@ ul .items2 {
   display: inline-block;
   font-size: 1.6rem;
   position: absolute;
-  top: 30px;
+  top: 15px;
   left: 50px;
   color: var(--text-color);
 }
@@ -408,8 +408,8 @@ ul .items2 {
   display: inline-block;
   font-size: 1.6rem;
   position: absolute;
-  top: 30px;
-  left: 450px;
+  top: 53px;
+  left: 50px;
   padding: 0;
   margin: 0;
   color: var(--text-color);
@@ -686,14 +686,6 @@ a {
     left: 38%;
   }
 
-  .box-2 p {
-    display: flex;
-    position: relative;
-    right: 60px;
-    font-size: 80%;
-    margin: 0;
-  }
-
   .art1 {
     margin-top: 0;
   }
@@ -719,20 +711,6 @@ a {
     align-items: flex-start;
   }
 
-  .box-1 p {
-    display: flex;
-    font-size: 85%;
-    margin: 0;
-  }
-
-  .box-2 p {
-    display: flex;
-    position: relative;
-    right: 60px;
-    font-size: 80%;
-    margin: 0;
-  }
-
   .miofirm1 p {
     display: flex;
     margin: 0;
@@ -755,14 +733,6 @@ a {
 
   .loghi {
     left: 34%;
-  }
-
-  .box-2 p {
-    display: flex;
-    position: relative;
-    right: 60px;
-    font-size: 80%;
-    margin: 0;
   }
 
   .art1 {
@@ -824,15 +794,6 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-  }
-
-  .box-2 p {
-    display: flex;
-    position: relative;
-    right: 150px;
-    font-size: 80%;
-    margin: 0;
-    padding-right: 10px;
   }
 
   .miofirm2 p {
@@ -938,15 +899,6 @@ a {
     padding: 0;
     margin: 0;
   }
-
-  .box-2 p {
-    display: flex;
-    position: relative;
-    right: 190px;
-    font-size: 80%;
-    margin: 0;
-    padding-right: 10px;
-  }
 }
 
 @media screen and (max-width: 855px) {
@@ -960,24 +912,6 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-  }
-
-  .box-1 p {
-    display: block;
-    position: relative;
-
-    bottom: 11px;
-  }
-
-  .box-2 p {
-    display: block;
-    position: relative;
-    right: 400px;
-    top: 25px;
-    font-size: 80%;
-    margin: 0;
-    padding-right: 10px;
-    white-space: nowrap;
   }
 
   .miofirm1 p {
@@ -1005,10 +939,6 @@ a {
   .loghi {
     border: 0;
   }
-
-  .dropdown {
-    display: block;
-  }
 }
 
 @media screen and (max-width: 800px) {
@@ -1028,6 +958,7 @@ a {
   }
 
   .dropdown {
+    display: flex;
     position: fixed;
     bottom: 100px;
     right: 20px;
@@ -1165,37 +1096,12 @@ a {
   }
 
   .box-1 p {
-    display: block;
-    position: relative;
-
-    bottom: 11px;
+    font-size: 80%;
   }
 
   .box-2 p {
-    display: block;
-    position: relative;
-    right: 400px;
-    top: 25px;
     font-size: 80%;
-    margin: 0;
-    padding-right: 10px;
     white-space: nowrap;
-  }
-
-  .miofirm1 p {
-    position: relative;
-    display: block;
-    margin: 0;
-    top: 23px;
-    right: 142px;
-  }
-
-  .miofirm2 p {
-    display: block;
-    position: relative;
-    bottom: 15px;
-    margin: 0;
-    right: 40px;
   }
 
   .sottbar {
@@ -1282,6 +1188,14 @@ a {
   .logmediami a {
     font-size: 1.6rem;
   }
+
+  .miofirm1 p {
+    display: none;
+  }
+
+  .miofirm2 p {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1295,40 +1209,6 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-  }
-
-  .box-1 p {
-    display: block;
-    position: relative;
-
-    bottom: 11px;
-  }
-
-  .box-2 p {
-    display: block;
-    position: relative;
-    right: 400px;
-    top: 25px;
-    font-size: 80%;
-    margin: 0;
-    padding-right: 10px;
-    white-space: nowrap;
-  }
-
-  .miofirm1 p {
-    position: relative;
-    display: block;
-    margin: 0;
-    top: 23px;
-    right: 60px;
-  }
-
-  .miofirm2 p {
-    display: block;
-    position: relative;
-    bottom: 15px;
-    margin: 0;
-    left: 10px;
   }
 
   .art1 {
@@ -1537,25 +1417,6 @@ a {
 }
 
 @media screen and (max-width: 505px) {
-  .box-1 p {
-    display: block;
-    position: relative;
-    font-size: 70%;
-    bottom: 11px;
-    right: 30px;
-  }
-
-  .box-2 p {
-    display: block;
-    position: relative;
-    right: 430px;
-    top: 25px;
-    font-size: 70%;
-    margin: 0;
-    padding-right: 10px;
-    white-space: nowrap;
-  }
-
   .miofirm1 p {
     display: none;
   }
@@ -1673,13 +1534,8 @@ a {
   .art1 {
     margin-top: 0;
   }
-}
 
-@media screen and (max-width: 300px) {
-  body {
-    display: block;
-    max-width: 300px;
-    overflow: hidden;
-    white-space: nowrap;
+  .items2 {
+    word-wrap: break-word;
   }
 }
