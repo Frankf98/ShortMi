@@ -14,7 +14,7 @@
   --bg-color: rgb(0, 0, 0);
   --second-bg-color: #323946;
   --text-color: #fff;
-  --main-color: rgb(128, 104, 80);
+  --main-color: rgb(141, 112, 83);
 }
 
 html {
@@ -24,6 +24,8 @@ html {
 
 body {
   background-color: #f7f4f4;
+  padding: 0;
+  margin: 0;
 }
 
 .box-side {
@@ -60,7 +62,7 @@ body {
 header.headerone {
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -71,7 +73,6 @@ header.headerone {
 }
 
 #navbar {
-  position: fixed;
   width: 100%;
   transition: opacity 0.7s;
   opacity: 1;
@@ -692,6 +693,10 @@ a {
     font-size: 80%;
     margin: 0;
   }
+
+  .art1 {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 1215px) {
@@ -764,6 +769,7 @@ a {
     flex-direction: column;
     display: flex;
     padding-top: 0;
+    margin-top: 0;
     top: 0;
   }
 
@@ -852,10 +858,74 @@ a {
     flex-direction: row;
     padding: auto;
     flex-flow: row wrap;
+    padding: 50px 0;
   }
 
   .bx3 {
     order: 1;
+  }
+
+  .tegniututtidue {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fotografia {
+    padding: 1px 20px 20px 10px;
+    margin: 1px 20px 20px 10px;
+  }
+
+  .fotografia img {
+    width: 100%;
+    height: auto;
+  }
+
+  .scritti p {
+    font-size: 2rem;
+    width: 100%;
+    padding: 30px 20px 20px 20px;
+    margin: 20px 0px 30px 0px;
+  }
+
+  #postur {
+    top: 30px;
+    margin: 60px 0 0 50px;
+    padding: 5px 0 0 0;
+  }
+
+  #psinix {
+    top: 65px;
+    padding: 30px 20px 20px 20px;
+    margin: 10px 20px 0 20px;
+  }
+
+  .logbaia img {
+    width: 100px;
+    height: 80px;
+    top: 90px;
+    border-radius: 0 0 0 0;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .logbaia a:hover {
+    border: none;
+  }
+
+  .logmediami {
+    width: 100%;
+    height: 5px;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 0 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .logmediami a {
+    font-size: 1.6rem;
   }
 }
 
@@ -951,7 +1021,10 @@ a {
   }
 
   #menu-icon {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
   }
 
   .dropdown {
@@ -998,15 +1071,6 @@ a {
 
   .dropdown-menu li a:hover {
     border-left: 3px solid #409503ad;
-  }
-
-  .trelines {
-    position: fixed;
-    right: 5%;
-    top: 3%;
-    font-size: 50px;
-    z-index: 100000000;
-    color: var(--text-color);
   }
 
   .navlist {
@@ -1150,6 +1214,73 @@ a {
     align-items: center;
     width: 100%;
     height: clamp(15%, 15%, 15%);
+  }
+
+  #about-section {
+    padding: 50px 0;
+  }
+
+  .tegniututtidue {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fotografia {
+    padding: 1px 20px 20px 10px;
+    margin: 1px 20px 20px 10px;
+  }
+
+  .fotografia img {
+    width: 100%;
+    height: auto;
+  }
+
+  .scritti p {
+    font-size: 2rem;
+    width: 100%;
+    padding: 30px 20px 20px 20px;
+    margin: 20px 0px 30px 0px;
+  }
+
+  #postur {
+    top: 30px;
+    margin: 60px 0 0 50px;
+    padding: 5px 0 0 0;
+  }
+
+  #psinix {
+    top: 65px;
+    padding: 30px 20px 20px 20px;
+    margin: 10px 20px 0 20px;
+  }
+
+  .logbaia img {
+    width: 100px;
+    height: 80px;
+    top: 90px;
+    border-radius: 0 0 0 0;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .logbaia a:hover {
+    border: none;
+  }
+
+  .logmediami {
+    width: 100%;
+    height: 5px;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 0 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .logmediami a {
+    font-size: 1.6rem;
   }
 }
 
@@ -1471,144 +1602,6 @@ a {
   }
 }
 
-@media screen and (max-width: 1000px) {
-  #about-section {
-    padding: 50px 0;
-  }
-
-  .tegniututtidue {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .fotografia {
-    padding: 1px 20px 20px 10px;
-    margin: 1px 20px 20px 10px;
-  }
-
-  .fotografia img {
-    width: 100%;
-    height: auto;
-  }
-
-  .scritti p {
-    font-size: 2rem;
-    width: 100%;
-    padding: 30px 20px 20px 20px;
-    margin: 20px 0px 30px 0px;
-  }
-
-  #postur {
-    top: 30px;
-    margin: 60px 0 0 50px;
-    padding: 5px 0 0 0;
-  }
-
-  #psinix {
-    top: 65px;
-    padding: 30px 20px 20px 20px;
-    margin: 10px 20px 0 20px;
-  }
-
-  .logbaia img {
-    width: 100px;
-    height: 80px;
-    top: 90px;
-    border-radius: 0 0 0 0;
-    border: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .logbaia a:hover {
-    border: none;
-  }
-
-  .logmediami {
-    width: 100%;
-    height: 5px;
-    top: 120%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 0 0 0 0;
-    padding: 0;
-    margin: 0;
-  }
-
-  .logmediami a {
-    font-size: 1.6rem;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  #about-section {
-    padding: 50px 0;
-  }
-
-  .tegniututtidue {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .fotografia {
-    padding: 1px 20px 20px 10px;
-    margin: 1px 20px 20px 10px;
-  }
-
-  .fotografia img {
-    width: 100%;
-    height: auto;
-  }
-
-  .scritti p {
-    font-size: 2rem;
-    width: 100%;
-    padding: 30px 20px 20px 20px;
-    margin: 20px 0px 30px 0px;
-  }
-
-  #postur {
-    top: 30px;
-    margin: 60px 0 0 50px;
-    padding: 5px 0 0 0;
-  }
-
-  #psinix {
-    top: 65px;
-    padding: 30px 20px 20px 20px;
-    margin: 10px 20px 0 20px;
-  }
-
-  .logbaia img {
-    width: 100px;
-    height: 80px;
-    top: 90px;
-    border-radius: 0 0 0 0;
-    border: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .logbaia a:hover {
-    border: none;
-  }
-
-  .logmediami {
-    width: 100%;
-    height: 5px;
-    top: 120%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 0 0 0 0;
-    padding: 0;
-    margin: 0;
-  }
-
-  .logmediami a {
-    font-size: 1.6rem;
-  }
-}
-
 @media screen and (max-width: 408px) {
   .art1 {
     flex-direction: column;
@@ -1675,6 +1668,10 @@ a {
     font-family: "Dosis", sans-serif;
     font-weight: 500;
     font-size: 2.3rem;
+  }
+
+  .art1 {
+    margin-top: 0;
   }
 }
 
